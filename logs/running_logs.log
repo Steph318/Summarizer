@@ -1,0 +1,553 @@
+[2024-11-27 16:33:29,584: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 16:33:29,585: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 16:33:29,585: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 16:33:29,585: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/utils/common.py", line 32, in read_yaml
+    return ConfigBox(content)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/config/configuration.py", line 13, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/utils/common.py", line 34, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-11-27 19:51:57,770: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 19:51:57,771: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 19:51:57,771: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 19:51:57,772: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/utils/common.py", line 32, in read_yaml
+    return ConfigBox(content)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/config/configuration.py", line 13, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/utils/common.py", line 34, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-11-27 20:06:36,167: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:06:36,167: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:06:36,168: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:06:36,168: INFO: common: created directory at: artifacts]
+[2024-11-27 20:06:36,168: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:06:37,263: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:06:36 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"0d4b29a69b65f1775b594a264e9e9cb0"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=PFV5ciJKB%2FJm6tMeJ7mvvqk48nX54zjwbRsM%2BHQmhL%2F8f20GaJ7Rziy%2BTIYTo0v4KlcfTmqedHX8ft%2FwjfJ%2BdBQH6DGev6mjRDo%2FhA22mO0ZmnKsEwTdUC0MNgwzhwLzVCauDtunJk9T%2BgWK1lHLzu%2BCiI66eLr2YEKDsLGFyKFdmcVwWz7Nk6meG4Hp2adJv7ZqYaWUNgfEDCvP2OhK%2BNFFDwqQ%2BZ3%2F0Tm1kUH7eA%2FYFWqe8sO8sTyvPmn4%2BD8MQIDBV2PHR5xBlgtCf%2FPg9Q%3D%3D--7hmdlINJe1BL1hsO--bwrnIRBqyELjMVPacUfIBw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.707209739.1732737996; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:06:36 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:06:36 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 93B7:309FB:4B3C91A:4CEBF10:67477BCC
+connection: close
+
+]
+[2024-11-27 20:06:37,264: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:12:16,853: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:12:16,854: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:12:16,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:12:16,854: INFO: common: created directory at: artifacts]
+[2024-11-27 20:12:16,854: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:12:16,855: INFO: data_ingestion: File already exists of size: ~ 163 KB]
+[2024-11-27 20:12:16,855: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:16:41,203: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:16:41,204: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:16:41,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:16:41,205: INFO: common: created directory at: artifacts]
+[2024-11-27 20:16:41,205: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:16:42,251: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:16:41 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"a816a0d3c3040b5613914cf9e320a4cf"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=5FQHED0kTHsoNP%2Bd4dWfdGaDXWcsruWCZ8%2B2YDvg87%2FQe8f2lUylB2kDQTpIs3ooo90vyt%2BwJqfMU7PSRWiRzkaX%2FJ7qyrb3GbfsIR45GWYPM4HnPyz0XjRvQW04vSdnWm0%2FB0WDl%2FxIaRMpdcxsdJk4hgZm1rCvQDLg08qxoYUW02%2BiY3sxa0%2FPbE9x12c%2F%2FnjeNeVcmZr438A%2F2yp5a3%2BUe6OJKkpBA9LdeXYWqzUozKNfsNWXKX8i4vqHJR5YdM0xcVtmV7Gi5MGVvpAJmA%3D%3D--2U1Lghv0cWl2S9Sb--AGV9%2FQLs7TFa0sjjP3baHA%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1259881360.1732738601; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:16:41 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:16:41 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C61C:341B6E:4C2AFA5:4DDDA72:67477E29
+connection: close
+
+]
+[2024-11-27 20:16:42,251: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:17:59,295: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:17:59,296: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:17:59,296: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:17:59,296: INFO: common: created directory at: artifacts]
+[2024-11-27 20:17:59,296: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:18:00,297: INFO: data_ingestion: artifacts/data_ingestion/samsum-dataset.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:17:59 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"37c81a37197df73959eebcaa833fae55"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=2%2Fagn0twWYPiPSuqWtQX%2FPnPPUiwJSqXkHWFL0DKJ%2B09rcp0EhM2bOtCnFabfi0ED4YOoGZUXP6SKqIlXc4pTG53pxixeTy%2F4LXkNFPWsamD6P9CVkgWbSpsKgaNz3vZc2Wg%2Fgf72sVg%2Ba3%2BaIzsf%2FiuiSeqw3gdpB7UZbnHE4vdOrcDGzwRhLzXjlipa9gluxzJQZ3xymUAKX3XXBoPyyuYIEg%2BX7TD3acRIB7GHnsaxCRndCWkQm0lq%2FMZN0DEtIRQN27sMugjp%2Fjf%2FG8YJg%3D%3D--EVosQFd3ELr0GexI--ehwA5%2FnqDBlGv7nGks8jYg%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.587530655.1732738679; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:17:59 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:17:59 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C635:31442:4812372:49C73BA:67477E77
+connection: close
+
+]
+[2024-11-27 20:18:00,298: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:19:34,120: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:19:34,121: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:19:34,121: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:19:34,121: INFO: common: created directory at: artifacts]
+[2024-11-27 20:19:34,121: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:19:34,122: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:19:34,122: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:21:16,690: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:21:16,690: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:21:16,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:21:16,691: INFO: common: created directory at: artifacts]
+[2024-11-27 20:21:16,691: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:21:16,691: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:21:16,693: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:21:42,180: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:21:42,180: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:21:42,181: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:21:42,181: INFO: common: created directory at: artifacts]
+[2024-11-27 20:21:42,181: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:21:43,076: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum-dataset/summarizer-data.zip']
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 18, in download_file
+    filename, headers = request.urlretrieve(
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/urllib/request.py", line 251, in urlretrieve
+    tfp = open(filename, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum-dataset/summarizer-data.zip'
+[2024-11-27 20:22:28,255: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:22:28,256: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:22:28,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:22:28,256: INFO: common: created directory at: artifacts]
+[2024-11-27 20:22:28,256: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:22:28,256: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:22:28,256: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:25:50,288: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:25:50,288: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:25:50,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:25:50,289: INFO: common: created directory at: artifacts]
+[2024-11-27 20:25:50,289: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:25:50,289: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:25:50,290: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 43, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:34:31,935: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:34:31,936: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:34:31,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:34:31,937: INFO: common: created directory at: artifacts]
+[2024-11-27 20:34:31,937: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:34:31,937: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:34:31,938: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum-dataset.zip']
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 53, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1249, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum-dataset.zip'
+[2024-11-27 20:35:03,083: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:35:03,084: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:35:03,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:35:03,085: INFO: common: created directory at: artifacts]
+[2024-11-27 20:35:03,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:35:04,019: INFO: data_ingestion: artifacts/data_ingestion/samsum-dataset.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:35:03 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"7ff023eb2d3f53130098edd864d459c2"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=PW8KoQaN3mhRtsxwFc4sB3kVWxyMCpRcz3B3v48RJV02WcYwLzG7p1tAgxMFytsS1DzAPJup5n9eoHPPIcrvBH4pT8Ta2UZKfhlB4MCPKYWYn1V%2FmbPokRj7rmYyjusi1wdRKCfvp14hSzbRMZMheFFjWAB44gROPpzOIFCx7z86VhrCNjX8f2Q724pnCa0Pz9oCHlGJe3dbca8w%2FaSjg%2BvHzyHSQl7k9Ax6MrADj1ztED9m7ORdGTG03EISTJcP%2FyoZKTNGAaUCRlrgD0Wgng%3D%3D--tmyGe5oiIeFSmVGP--ErZCIGZZugHm7Z3qylwomg%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.2011633511.1732739703; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:35:03 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:35:03 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: F3EE:BE9D5:7EA294C:8170296:67478277
+connection: close
+
+]
+[2024-11-27 20:35:04,020: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 20:38:58,845: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:38:58,845: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:38:58,846: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:38:58,847: INFO: common: created directory at: artifacts]
+[2024-11-27 20:38:58,847: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:38:59,825: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:38:59 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"6e87635deb3f78ffe425857f9eb70fd6"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=vy0XvMZaAh2nYslxItSPNhU0Mb01cekrzKTLR%2F1l0LHlJIpnjGsTiqc%2FUkQhBZ%2BYOt19AgduAQ3QtJlFON14g6jODFZLOA5UM8qVAjtlZApNtLgzzP0hjWMbl9otUTfd11RE39G%2FsddhWW8NsVjN7oJqUMQGVRNTKAJjzVCx5OvLzrD648cCZcuRAFDJC1GBfMzpa38YXDW%2Bp77jjVlLWDjqN8efpKC%2Bkg5PXFjOcIfc7ZC9qKDL%2B%2BA2uzmMLuRYObjhQv5rjOF7eaIkQx1xzQ%3D%3D--%2FptilnwQC2XHAwW7--O4KLXn5xLI9HWN4qnWMoUQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.200306913.1732739939; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:38:59 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:38:59 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C61C:341B6E:4D7C7E8:4F380EF:67478363
+connection: close
+
+]
+[2024-11-27 20:38:59,825: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 20:39:46,344: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:39:46,344: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:39:46,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:39:46,345: INFO: common: created directory at: artifacts]
+[2024-11-27 20:39:46,345: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:39:47,488: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:39:47 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"28a92a2d9d88be912702703f7a387090"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=t9tH2AnmCYuTCTuqtOHBh0mNkj1H8dFWRUkD6SAC3yoi2Y5Q%2F2rWn%2FG12bIsBz4i2y1aLRbvT8KHSfQN5tHQLpvB0%2FwwjVJ8CFPltXOvo2sVqIU%2F1vQKl3gN%2F3%2FeEqvOC6uMSzRSM9XmXU7gR0%2BjPlbwnJCrMKpBb2KtgMIVEKCtqvhR1rgkqB0HnoAn24S5UrCvOv242fNhbKGgSUGggHt9U0tVjrunhduS8xo372kBGxEifJ85It89ST6ib47bahah5L81%2Fn3ETlcmXVLCUA%3D%3D--gezVIoieYPyVBTl8--0HlNi%2BdDeQ3DSqmz1PuJbA%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.100256649.1732739986; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:39:46 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:39:46 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C65C:31442:4948132:4B05D1A:67478392
+connection: close
+
+]
+[2024-11-27 20:39:47,489: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 44, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:41:49,399: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:41:49,400: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:41:49,400: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:41:49,400: INFO: common: created directory at: artifacts]
+[2024-11-27 20:41:49,401: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:41:50,402: INFO: data_ingestion: artifacts/data_ingestion/samsum-dataset.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:41:50 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"9a8248fe3a79016b28f11ca2ed442bbc"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=tWK14Jm6kICcTql0t0cJtZEa6EgTtfBpc7LJT8OIczwxrTG1oizY79t3PnMpGtfaY24nS2tNx12OTsngm4jPHblxpaygLKbfQsOHNdYc7vxv%2BARPjUVX31qaLFA577BMNmGCcnFXkWcDCoyvRLWdAUrJdwt0NoO4HUVsXCGc%2B%2FfPL5ELLpaE%2Fyp06YbBGRnKr4e1%2B645SJHSmEHguWCglUtfrsmr4ZyvyryL35h9zz6zOS4xPs36gRJTCgLka5dUk6B8jgcOzib0W2FGJ8Z0ug%3D%3D--xTk3n7RyMyTujucI--pTru02ICz9UyyHMVhqONyA%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.757293538.1732740109; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:41:49 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:41:49 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C652:BE9D5:7F0CFE9:81DD46F:6747840D
+connection: close
+
+]
+[2024-11-27 20:41:50,403: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 44, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:50:37,762: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:50:37,762: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:50:37,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:50:37,763: INFO: common: created directory at: artifacts]
+[2024-11-27 20:50:37,763: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:50:38,847: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:50:38 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"f4c01f99b564aa59b1c084ab4c04092f"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=7Tds5wZv%2FSe3wO85wnM4dYQZvDMn5efFJsxnJf%2FDg1PlR%2B1efu7HCfcaLjvdJfhSfi2%2BUcW68YNVCxSux2ZygEKwAssbQ6hSg1DJeEo3sp3JkvCktVS%2FQJONW0lDFsqdX%2BsEgT1qgimz9Q9cZknxTb1u89kVd%2FSuNvoBeactfo%2BFHhjBr1Bf1AmH2YYaTtYZxrepnevLB%2F1NQuqj9ag%2FysaZ0UdbpSSt9uWdqihkFfl4dpDYSX%2BqBy7FoUJw4T53XCmNf7qmW0lmKhl%2F7rzt6A%3D%3D--MpE9DYdVkXqyjSoA--aqEJoJNKBNpZDlkAJdcXUw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1909388288.1732740638; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:50:38 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:50:38 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 93BB:1B603F:4FC7DC0:5186FBB:6747861E
+connection: close
+
+]
+[2024-11-27 20:50:38,848: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 44, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 20:54:39,497: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:54:39,498: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:54:39,499: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:54:39,499: INFO: common: created directory at: artifacts]
+[2024-11-27 20:54:39,499: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:54:39,499: INFO: data_ingestion: File already exists of size: ~ 283 KB]
+[2024-11-27 20:54:39,499: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 20:59:55,586: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 20:59:55,586: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 20:59:55,587: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 20:59:55,587: INFO: common: created directory at: artifacts]
+[2024-11-27 20:59:55,587: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 20:59:57,487: INFO: data_ingestion: artifacts/data_ingestion/samsum-dataset.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 20:59:56 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"011d45ff792756256a9bee6c1cd701fe"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=HmSeK0WbafEllpGMWfcy1s4M%2F1uZL8ZuBeAvOpAqI3uya2gt1JVkoIcC%2F6k3JrKm8wmW3yxkLpAxiejzqTWjo2JJc3FIAU%2F1fENrgnCqSBJtpck%2B9SlbjTEwURMHD0NxnylCBTYn6k4WjuPt3BIKkSKO7TTaYz2KthJNJKaJfQeFxnNqrIk3%2FxJzrpfbKgICY3MY9AfzGKkM1KWQbf%2FhAxg43XWLbDzoDa5tBw6PPfttIVPOhonk5dPcxNm5EMuhfOPh7x0ZQ2s%2FRwLbhNgnjg%3D%3D--h23jsHXg5KAPDmAn--31dAiYkUAlvXoci%2BRcJc4w%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1767011184.1732741196; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:59:56 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 20:59:56 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C61B:3CE796:4BE0D77:4DA3A1D:6747884B
+connection: close
+
+]
+[2024-11-27 20:59:57,488: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 21:05:31,861: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 21:05:31,862: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 21:05:31,862: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 21:05:31,862: INFO: common: created directory at: artifacts]
+[2024-11-27 21:05:31,862: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 21:05:31,863: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 21:05:31,915: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 21:06:37,056: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 21:06:37,056: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 21:06:37,057: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 21:06:37,057: INFO: common: created directory at: artifacts]
+[2024-11-27 21:06:37,057: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 21:06:37,057: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 21:06:37,107: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 21:07:30,220: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 21:07:30,221: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 21:07:30,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 21:07:30,222: INFO: common: created directory at: artifacts]
+[2024-11-27 21:07:30,222: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 21:07:30,222: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 21:07:30,275: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 21:07:57,355: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 21:07:57,356: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 21:07:57,356: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 21:07:57,356: INFO: common: created directory at: artifacts]
+[2024-11-27 21:07:57,356: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 21:07:57,356: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 21:07:57,409: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]

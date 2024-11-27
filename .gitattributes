@@ -1,5 +1,4 @@
 requirements.txt filter=lfs diff=lfs merge=lfs -text
-README.md filter=lfs diff=lfs merge=lfs -text
 src/textSummarizer.egg-info/PKG-INFO filter=lfs diff=lfs merge=lfs -text
 src/textSummarizer/logging/__init__.py filter=lfs diff=lfs merge=lfs -text
 research/trials.ipynb filter=lfs diff=lfs merge=lfs -text
