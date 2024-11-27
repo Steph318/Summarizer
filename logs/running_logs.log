@@ -677,3 +677,553 @@ x==========x]
 [2024-11-27 22:26:51,026: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-11-27 22:33:41,341: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:33:41,343: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:33:41,344: INFO: common: created directory at: artifacts]
+[2024-11-27 22:33:41,345: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 22:33:50,432: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:33:50,433: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:33:50,434: INFO: common: created directory at: artifacts]
+[2024-11-27 22:33:50,435: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 22:37:19,413: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 22:41:54,019: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:41:54,021: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:41:54,021: INFO: common: created directory at: artifacts]
+[2024-11-27 23:04:27,733: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:04:27,898: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:04:27,899: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:04:27,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:04:27,900: INFO: common: created directory at: artifacts]
+[2024-11-27 23:04:27,900: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:04:27,900: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:04:27,951: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:04:27,952: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:04:27,953: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:04:27,954: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:04:27,954: INFO: common: created directory at: artifacts]
+[2024-11-27 23:04:27,954: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:04:27,955: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:04:27,955: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:04:27,956: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:04:27,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:04:27,957: INFO: common: created directory at: artifacts]
+[2024-11-27 23:04:27,957: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:04:32,441: ERROR: main: Directory artifacts/data_ingestion/samsum-dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 30, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/load.py", line 2218, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: Directory artifacts/data_ingestion/samsum-dataset is neither a `Dataset` directory nor a `DatasetDict` directory.
+[2024-11-27 23:12:33,073: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:12:33,241: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:12:33,242: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:12:33,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:12:33,243: INFO: common: created directory at: artifacts]
+[2024-11-27 23:12:33,243: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:12:34,316: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 23:12:33 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"98b3d26baa5df29aaa78c5ac22653b4b"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=1M3F%2F8iJYLHwqoNM2Ajer8BLDlwJevY9Zd5487IPwfvEhWkEIKx4hX7GgxuhKW3mlKAc%2FQlL%2FVEWv6Kr%2FEpPKkc6xK%2F1SZVXVXH2OgLtvcCWX9ihf8pArflr3PIPOBQ%2FYJU4Voh6A6h13wcuEsMlZ1GM4zE0c3YxcPmK4yvOL%2Fk58Ba5yPp9RehGMKXUUUrvrC4zJItAo4A55NoznLvdt%2Fju6fgseirIa9j5%2Bw6Iosza78EhLMIiYtXKQ23UeaXYIIya2GYvrv3NHSbLSMFZYw%3D%3D--%2BxP8ctRul6hJMfRw--ECvreRS%2BxKqp%2BAOwMb%2BAgQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1862867140.1732749153; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 23:12:33 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 23:12:33 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: F139:1B603F:5E7441A:606CB1E:6747A761
+connection: close
+
+]
+[2024-11-27 23:12:34,317: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 11, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 44, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 23:16:01,104: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:16:01,270: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:16:01,271: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:16:01,272: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:16:01,272: INFO: common: created directory at: artifacts]
+[2024-11-27 23:16:01,272: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:16:02,229: INFO: data_ingestion: artifacts/data_ingestion/summarizer-data.zip download! with following info: 
+Server: GitHub.com
+Date: Wed, 27 Nov 2024 23:16:01 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"d5b846b2ebef2f7d327740b1802c05a6"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=HTBUNDd75SFiDG1D3rsz%2FiugBi2Es%2Bh%2B7ZCSM0L0mmxwqyk2uScgTPk1yx4GT0HS46iUjoIO3nXrcKfutUIUPQqlD0aC9SCXzn0XZzHNlOi1ZWb2ZSyP%2B01gWhshnsSIoWQmtzsyo2c%2Bexq7U%2BDxP1d2NLku2ShRbFksBvZb9T9U03Iot%2BIRYi3vi1DZpqKFsGM%2BwZyN43mOxCz1hrSnxdHiA49HqW3rCbP6fE7BYPuSCjOYFYrhkQkpyDr%2FEx5%2F9dcbcRUXQ6Kz4LxxjcB%2BYA%3D%3D--p535zmHFcYACeP4A--n6TrTkvqvxMPJoyvghnLQA%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1221998221.1732749361; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 23:16:01 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Nov 2025 23:16:01 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 93B6:2640D1:896BABD:8C764CD:6747A831
+connection: close
+
+]
+[2024-11-27 23:16:02,231: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 11, in <module>
+    data_ingestion.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_ingestion.py", line 44, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/Users/ndjebayidamarisstephanie/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-27 23:16:27,668: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:16:27,829: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:16:27,830: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:16:27,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:16:27,831: INFO: common: created directory at: artifacts]
+[2024-11-27 23:16:27,831: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:16:27,831: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:16:27,880: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:16:27,880: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:16:27,881: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:16:27,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:16:27,882: INFO: common: created directory at: artifacts]
+[2024-11-27 23:16:27,882: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:16:27,882: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:16:27,882: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:16:27,883: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:16:27,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:16:27,884: INFO: common: created directory at: artifacts]
+[2024-11-27 23:16:27,884: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:16:29,860: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 31, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 17, in convert_examples_to_features
+    input_encodings = self.tokenizer(example_batch['dialogue'] , max_length = 1024, truncation = True )
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3109, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3311, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_fast.py", line 529, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2024-11-27 23:21:22,437: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:21:22,608: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:21:22,609: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:21:22,610: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:21:22,610: INFO: common: created directory at: artifacts]
+[2024-11-27 23:21:22,610: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:21:22,610: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:21:22,659: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:21:22,659: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:21:22,660: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:21:22,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:21:22,661: INFO: common: created directory at: artifacts]
+[2024-11-27 23:21:22,661: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:21:22,662: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:21:22,662: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:21:22,663: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:21:22,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:21:22,664: INFO: common: created directory at: artifacts]
+[2024-11-27 23:21:22,664: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:21:25,449: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 33, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 19, in convert_examples_to_features
+    input_encodings = self.tokenizer(example_batch['dialogue'] , max_length = 1024, truncation = True )
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3109, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3311, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_fast.py", line 529, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2024-11-27 23:23:14,134: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:23:14,307: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:23:14,308: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:23:14,309: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:23:14,309: INFO: common: created directory at: artifacts]
+[2024-11-27 23:23:14,310: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:23:14,310: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:23:14,358: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:23:14,358: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:23:14,359: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:23:14,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:23:14,360: INFO: common: created directory at: artifacts]
+[2024-11-27 23:23:14,360: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:23:14,361: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:23:14,361: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:23:14,362: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:23:14,362: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:23:14,363: INFO: common: created directory at: artifacts]
+[2024-11-27 23:23:14,363: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:23:16,842: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 36, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 19, in convert_examples_to_features
+    input_encodings = self.tokenizer(example_batch['dialogue'] ,
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3109, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3311, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_fast.py", line 529, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2024-11-27 23:29:59,008: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:29:59,178: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:29:59,179: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:29:59,180: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:29:59,180: INFO: common: created directory at: artifacts]
+[2024-11-27 23:29:59,180: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:29:59,180: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:29:59,228: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:29:59,228: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:29:59,229: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:29:59,230: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:29:59,230: INFO: common: created directory at: artifacts]
+[2024-11-27 23:29:59,230: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:29:59,231: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:29:59,231: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:29:59,232: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:29:59,233: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:29:59,233: INFO: common: created directory at: artifacts]
+[2024-11-27 23:29:59,233: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:30:01,743: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 39, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 19, in convert_examples_to_features
+    input_encodings = self.tokenizer(example_batch['dialogue'] ,
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3109, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3311, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_fast.py", line 529, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2024-11-27 23:34:36,240: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:34:36,410: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:34:36,412: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:34:36,413: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:34:36,413: INFO: common: created directory at: artifacts]
+[2024-11-27 23:34:36,413: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:34:36,413: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:34:36,462: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:34:36,462: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:34:36,463: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:34:36,463: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:34:36,463: INFO: common: created directory at: artifacts]
+[2024-11-27 23:34:36,464: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:34:36,464: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:34:36,464: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:34:36,465: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:34:36,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:34:36,466: INFO: common: created directory at: artifacts]
+[2024-11-27 23:34:36,466: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:34:39,160: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 52, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 22, in convert_examples_to_features
+    input_encodings = self.tokenizer(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3109, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3311, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_fast.py", line 529, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2024-11-27 23:38:47,700: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:38:47,882: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:38:47,884: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:38:47,885: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:38:47,885: INFO: common: created directory at: artifacts]
+[2024-11-27 23:38:47,885: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:38:47,885: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:38:47,934: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:38:47,934: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:38:47,935: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:38:47,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:38:47,936: INFO: common: created directory at: artifacts]
+[2024-11-27 23:38:47,936: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:38:47,937: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:38:47,937: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:38:47,938: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:38:47,939: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:38:47,939: INFO: common: created directory at: artifacts]
+[2024-11-27 23:38:47,939: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:38:50,426: ERROR: main: All dialogues must be strings.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 56, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 22, in convert_examples_to_features
+    raise TypeError("All dialogues must be strings.")
+TypeError: All dialogues must be strings.
+[2024-11-27 23:40:18,289: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:40:18,460: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:40:18,461: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:40:18,462: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:40:18,462: INFO: common: created directory at: artifacts]
+[2024-11-27 23:40:18,462: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:40:18,462: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:40:18,511: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:40:18,511: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:40:18,512: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:40:18,513: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:40:18,513: INFO: common: created directory at: artifacts]
+[2024-11-27 23:40:18,513: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:40:18,513: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:40:18,513: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:40:18,515: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:40:18,515: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:40:18,515: INFO: common: created directory at: artifacts]
+[2024-11-27 23:40:18,515: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:40:20,980: ERROR: main: All dialogues must be strings.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 60, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 26, in convert_examples_to_features
+    raise TypeError("All dialogues must be strings.")
+TypeError: All dialogues must be strings.
+[2024-11-27 23:43:11,717: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:43:11,883: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:43:11,884: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:43:11,885: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:43:11,885: INFO: common: created directory at: artifacts]
+[2024-11-27 23:43:11,885: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:43:11,886: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:43:11,935: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:43:11,935: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:43:11,936: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:43:11,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:43:11,937: INFO: common: created directory at: artifacts]
+[2024-11-27 23:43:11,937: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:43:11,937: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:43:11,937: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:43:11,939: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:43:11,939: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:43:11,939: INFO: common: created directory at: artifacts]
+[2024-11-27 23:43:11,940: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:43:12,983: ERROR: main: Directory artifacts/data_ingestion/samsum-dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 59, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)  # For local dataset
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/load.py", line 2218, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: Directory artifacts/data_ingestion/samsum-dataset is neither a `Dataset` directory nor a `DatasetDict` directory.
+[2024-11-27 23:46:29,915: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-27 23:46:30,094: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 23:46:30,096: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:46:30,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:46:30,097: INFO: common: created directory at: artifacts]
+[2024-11-27 23:46:30,097: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 23:46:30,097: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 23:46:30,146: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:46:30,146: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 23:46:30,147: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:46:30,148: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:46:30,148: INFO: common: created directory at: artifacts]
+[2024-11-27 23:46:30,148: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 23:46:30,148: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-27 23:46:30,148: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-27 23:46:30,149: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 23:46:30,150: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 23:46:30,150: INFO: common: created directory at: artifacts]
+[2024-11-27 23:46:30,150: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-27 23:46:35,153: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
