@@ -551,3 +551,129 @@ x==========x]
 [2024-11-27 21:07:57,409: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-11-27 21:15:58,542: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 21:15:58,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 21:15:58,551: INFO: common: created directory at: artifacts]
+[2024-11-27 22:24:23,766: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 22:24:23,767: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:24:23,767: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:24:23,768: INFO: common: created directory at: artifacts]
+[2024-11-27 22:24:23,768: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 22:24:23,768: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 22:24:23,820: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 22:24:23,820: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 22:24:23,820: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:24:23,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:24:23,821: INFO: common: created directory at: artifacts]
+[2024-11-27 22:24:23,821: ERROR: main: "'ConfigBox' object has no attribute 'data_validation'"]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'data_validation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'data_validation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'data_validation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_validation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'data_validation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'data_validation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'data_validation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 22, in <module>
+    data_validation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/config/configuration.py", line 35, in get_data_validation_config
+    config = self.config.data_validation
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_validation'"
+[2024-11-27 22:26:08,344: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 22:26:08,345: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:26:08,346: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:26:08,346: INFO: common: created directory at: artifacts]
+[2024-11-27 22:26:08,346: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 22:26:08,346: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 22:26:08,397: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 22:26:08,397: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 22:26:08,398: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:26:08,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:26:08,399: INFO: common: created directory at: artifacts]
+[2024-11-27 22:26:08,399: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 22:26:08,399: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum_dataset']
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 22, in <module>
+    data_validation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_02_data_validation.py", line 14, in main
+    data_validation.validate_all_files_exist()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_validation.py", line 30, in validate_all_files_exist
+    raise e
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_validation.py", line 15, in validate_all_files_exist
+    all_files = os.listdir(os.path.join("artifacts","data_ingestion","samsum_dataset"))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/samsum_dataset'
+[2024-11-27 22:26:50,972: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-27 22:26:50,973: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:26:50,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:26:50,974: INFO: common: created directory at: artifacts]
+[2024-11-27 22:26:50,974: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-27 22:26:50,974: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-27 22:26:51,024: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-27 22:26:51,024: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-27 22:26:51,025: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-27 22:26:51,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-27 22:26:51,026: INFO: common: created directory at: artifacts]
+[2024-11-27 22:26:51,026: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-27 22:26:51,026: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
