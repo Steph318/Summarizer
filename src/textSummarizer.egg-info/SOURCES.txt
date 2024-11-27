@@ -1,16 +1,3 @@
-README.md
-setup.py
-src/textSummarizer/__init__.py
-src/textSummarizer.egg-info/PKG-INFO
-src/textSummarizer.egg-info/SOURCES.txt
-src/textSummarizer.egg-info/dependency_links.txt
-src/textSummarizer.egg-info/top_level.txt
-src/textSummarizer/config/__init__.py
-src/textSummarizer/config/configuration.py
-src/textSummarizer/conponents/__init__.py
-src/textSummarizer/constants/__init__.py
-src/textSummarizer/entity/__init__.py
-src/textSummarizer/logging/__init__.py
-src/textSummarizer/pipeline/__init__.py
-src/textSummarizer/utils/__init__.py
-src/textSummarizer/utils/common.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec269959e4e6cf7a5c1ddf70439855069386374bfbae65bc6949017409683cf6
+size 570

@@ -1,22 +1,3 @@
-import os
-import sys
-import logging
-
-logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
-log_dir = "logs"
-log_filepath = os.path.join(log_dir,"running_logs.log")
-os.makedirs(log_dir, exist_ok=True)
-
-
-
-logging.basicConfig(
-    level= logging.INFO,
-    format= logging_str,
-
-    handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
-
-logger = logging.getLogger("textSummarizerLogger")
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2fae7a6ed53449240059b00b6bfff60f8219a985f619aafd31e43de9f5be990
+size 450
