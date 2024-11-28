@@ -1227,3 +1227,947 @@ x==========x]
 [2024-11-27 23:46:35,153: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2024-11-28 00:10:16,808: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:10:17,279: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:10:17,280: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:10:17,281: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:10:17,281: INFO: common: created directory at: artifacts]
+[2024-11-28 00:10:17,281: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:10:17,282: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:10:17,332: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:10:17,332: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:10:17,334: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:10:17,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:10:17,335: INFO: common: created directory at: artifacts]
+[2024-11-28 00:10:17,335: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:10:17,336: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:10:17,336: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:10:17,337: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:10:17,338: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:10:17,338: INFO: common: created directory at: artifacts]
+[2024-11-28 00:10:17,338: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:10:22,593: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:10:22,594: INFO: main: *******************]
+[2024-11-28 00:10:22,594: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:10:22,595: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:10:22,596: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:10:22,596: INFO: common: created directory at: artifacts]
+[2024-11-28 00:10:22,596: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:26:49,660: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>={ACCELERATE_MIN_VERSION}'`]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 134, in __init__
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/training_args.py", line 1773, in __post_init__
+    self.device
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/training_args.py", line 2299, in device
+    return self._setup_devices
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/training_args.py", line 2172, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>={ACCELERATE_MIN_VERSION}'`
+[2024-11-28 00:27:38,276: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:27:38,684: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:27:38,685: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:27:38,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:27:38,687: INFO: common: created directory at: artifacts]
+[2024-11-28 00:27:38,687: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:27:38,687: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:27:38,737: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:27:38,737: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:27:38,739: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:27:38,740: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:27:38,740: INFO: common: created directory at: artifacts]
+[2024-11-28 00:27:38,740: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:27:38,740: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:27:38,740: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:27:38,742: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:27:38,742: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:27:38,743: INFO: common: created directory at: artifacts]
+[2024-11-28 00:27:38,743: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:27:43,458: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:27:43,458: INFO: main: *******************]
+[2024-11-28 00:27:43,458: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:27:43,460: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:27:43,460: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:27:43,460: INFO: common: created directory at: artifacts]
+[2024-11-28 00:27:43,460: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:27:51,187: ERROR: main: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [_format_type, _output_all_columns, _format_columns, _format_kwargs, _split, _data_files, _fingerprint]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2152, in _inner_training_loop
+    train_dataloader = self.get_train_dataloader()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 958, in get_train_dataloader
+    train_dataset = self._remove_unused_columns(train_dataset, description="training")
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 884, in _remove_unused_columns
+    raise ValueError(
+ValueError: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [_format_type, _output_all_columns, _format_columns, _format_kwargs, _split, _data_files, _fingerprint]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.
+[2024-11-28 00:33:33,426: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:33:33,846: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:33:33,848: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:33:33,849: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:33:33,849: INFO: common: created directory at: artifacts]
+[2024-11-28 00:33:33,849: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:33:33,849: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:33:33,899: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:33:33,899: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:33:33,900: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:33:33,901: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:33:33,901: INFO: common: created directory at: artifacts]
+[2024-11-28 00:33:33,901: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:33:33,902: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:33:33,902: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:33:33,903: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:33:33,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:33:33,904: INFO: common: created directory at: artifacts]
+[2024-11-28 00:33:33,904: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:33:39,095: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:33:39,096: INFO: main: *******************]
+[2024-11-28 00:33:39,096: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:33:39,097: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:33:39,098: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:33:39,098: INFO: common: created directory at: artifacts]
+[2024-11-28 00:33:39,098: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:33:46,835: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:36:53,856: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:36:54,265: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:36:54,267: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:36:54,268: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:36:54,268: INFO: common: created directory at: artifacts]
+[2024-11-28 00:36:54,268: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:36:54,268: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:36:54,320: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:36:54,320: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:36:54,321: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:36:54,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:36:54,322: INFO: common: created directory at: artifacts]
+[2024-11-28 00:36:54,322: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:36:54,323: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:36:54,323: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:36:54,325: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:36:54,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:36:54,325: INFO: common: created directory at: artifacts]
+[2024-11-28 00:36:54,326: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:36:59,157: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:36:59,157: INFO: main: *******************]
+[2024-11-28 00:36:59,157: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:36:59,158: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:36:59,159: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:36:59,159: INFO: common: created directory at: artifacts]
+[2024-11-28 00:36:59,160: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:37:06,306: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:43:06,148: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:43:06,563: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:43:06,565: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:43:06,566: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:43:06,566: INFO: common: created directory at: artifacts]
+[2024-11-28 00:43:06,566: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:43:06,566: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:43:06,617: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:43:06,617: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:43:06,619: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:43:06,619: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:43:06,619: INFO: common: created directory at: artifacts]
+[2024-11-28 00:43:06,619: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:43:06,620: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:43:06,620: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:43:06,621: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:43:06,622: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:43:06,622: INFO: common: created directory at: artifacts]
+[2024-11-28 00:43:06,622: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:43:11,659: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:43:11,659: INFO: main: *******************]
+[2024-11-28 00:43:11,659: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:43:11,661: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:43:11,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:43:11,662: INFO: common: created directory at: artifacts]
+[2024-11-28 00:43:11,662: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:43:19,310: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:46:56,244: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:46:56,660: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:46:56,661: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:46:56,662: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:46:56,662: INFO: common: created directory at: artifacts]
+[2024-11-28 00:46:56,663: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:46:56,663: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:46:56,713: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:46:56,713: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:46:56,714: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:46:56,715: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:46:56,715: INFO: common: created directory at: artifacts]
+[2024-11-28 00:46:56,715: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:46:56,716: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:46:56,716: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:46:56,717: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:46:56,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:46:56,718: INFO: common: created directory at: artifacts]
+[2024-11-28 00:46:56,718: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:47:01,501: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:47:01,501: INFO: main: *******************]
+[2024-11-28 00:47:01,501: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:47:01,502: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:47:01,503: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:47:01,503: INFO: common: created directory at: artifacts]
+[2024-11-28 00:47:01,504: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:47:08,934: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:52:53,064: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:52:53,488: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:52:53,490: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:52:53,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:52:53,491: INFO: common: created directory at: artifacts]
+[2024-11-28 00:52:53,491: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:52:53,491: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:52:53,542: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:52:53,543: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:52:53,544: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:52:53,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:52:53,545: INFO: common: created directory at: artifacts]
+[2024-11-28 00:52:53,545: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:52:53,546: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:52:53,546: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:52:53,547: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:52:53,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:52:53,548: INFO: common: created directory at: artifacts]
+[2024-11-28 00:52:53,548: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:52:58,752: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:52:58,752: INFO: main: *******************]
+[2024-11-28 00:52:58,752: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:52:58,754: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:52:58,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:52:58,755: INFO: common: created directory at: artifacts]
+[2024-11-28 00:52:58,755: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:53:06,468: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:55:07,416: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:55:07,831: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:55:07,833: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:55:07,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:55:07,834: INFO: common: created directory at: artifacts]
+[2024-11-28 00:55:07,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:55:07,834: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:55:07,888: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:55:07,888: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:55:07,890: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:55:07,890: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:55:07,891: INFO: common: created directory at: artifacts]
+[2024-11-28 00:55:07,891: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:55:07,891: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:55:07,891: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:55:07,893: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:55:07,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:55:07,893: INFO: common: created directory at: artifacts]
+[2024-11-28 00:55:07,893: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:55:12,793: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:55:12,793: INFO: main: *******************]
+[2024-11-28 00:55:12,793: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:55:12,794: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:55:12,795: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:55:12,795: INFO: common: created directory at: artifacts]
+[2024-11-28 00:55:12,795: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:55:19,437: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 00:59:07,183: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 00:59:07,590: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 00:59:07,592: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:59:07,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:59:07,593: INFO: common: created directory at: artifacts]
+[2024-11-28 00:59:07,593: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 00:59:07,593: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 00:59:07,645: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:59:07,645: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 00:59:07,647: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:59:07,648: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:59:07,648: INFO: common: created directory at: artifacts]
+[2024-11-28 00:59:07,648: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 00:59:07,649: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:59:07,649: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 00:59:07,650: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:59:07,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:59:07,651: INFO: common: created directory at: artifacts]
+[2024-11-28 00:59:07,652: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 00:59:12,549: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 00:59:12,549: INFO: main: *******************]
+[2024-11-28 00:59:12,549: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 00:59:12,551: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 00:59:12,551: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 00:59:12,551: INFO: common: created directory at: artifacts]
+[2024-11-28 00:59:12,552: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 00:59:19,678: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 01:13:28,891: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:13:29,314: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:13:29,315: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:13:29,316: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:13:29,316: INFO: common: created directory at: artifacts]
+[2024-11-28 01:13:29,317: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:13:29,317: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:13:29,369: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:13:29,369: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:13:29,370: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:13:29,371: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:13:29,371: INFO: common: created directory at: artifacts]
+[2024-11-28 01:13:29,371: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:13:29,372: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:13:29,372: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:13:29,373: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:13:29,374: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:13:29,374: INFO: common: created directory at: artifacts]
+[2024-11-28 01:13:29,375: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:13:34,254: ERROR: main: 'DataTransformationConfig' object has no attribute 'output_dir']
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 87, in convert
+    os.mkdir(self.config.output_dir)
+AttributeError: 'DataTransformationConfig' object has no attribute 'output_dir'
+[2024-11-28 01:16:55,017: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:16:55,441: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:16:55,443: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:16:55,444: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:16:55,444: INFO: common: created directory at: artifacts]
+[2024-11-28 01:16:55,444: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:16:55,444: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:16:55,541: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:16:55,545: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:16:55,547: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:16:55,547: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:16:55,547: INFO: common: created directory at: artifacts]
+[2024-11-28 01:16:55,547: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:16:55,548: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:16:55,548: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:16:55,549: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:16:55,550: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:16:55,550: INFO: common: created directory at: artifacts]
+[2024-11-28 01:16:55,550: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:16:55,550: INFO: common: created directory at: artifacts/data_transformation/samsum-dataset]
+[2024-11-28 01:16:55,550: ERROR: main: DataTransformationConfig.__init__() got an unexpected keyword argument 'output_dir']
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 12, in main
+    data_transformation_config = config.get_data_transformation_config()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/config/configuration.py", line 55, in get_data_transformation_config
+    data_transformation_config = DataTransformationConfig(
+TypeError: DataTransformationConfig.__init__() got an unexpected keyword argument 'output_dir'
+[2024-11-28 01:25:00,011: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:25:00,429: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:25:00,431: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:25:00,432: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:25:00,432: INFO: common: created directory at: artifacts]
+[2024-11-28 01:25:00,432: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:25:00,432: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:25:00,483: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:25:00,483: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:25:00,485: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:25:00,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:25:00,486: INFO: common: created directory at: artifacts]
+[2024-11-28 01:25:00,486: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:25:00,487: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:25:00,487: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:25:00,488: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:25:00,489: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:25:00,489: INFO: common: created directory at: artifacts]
+[2024-11-28 01:25:00,489: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:25:05,515: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:25:05,516: INFO: main: *******************]
+[2024-11-28 01:25:05,516: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 01:25:05,517: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:25:05,518: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:25:05,518: INFO: common: created directory at: artifacts]
+[2024-11-28 01:25:05,518: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 01:25:13,831: ERROR: main: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3458, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['_data_files', '_fingerprint', '_format_columns', '_format_kwargs', '_format_type', '_output_all_columns', '_split']
+[2024-11-28 01:32:50,771: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:32:51,187: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:32:51,189: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:32:51,190: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:32:51,190: INFO: common: created directory at: artifacts]
+[2024-11-28 01:32:51,190: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:32:51,190: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:32:51,240: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:32:51,240: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:32:51,242: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:32:51,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:32:51,243: INFO: common: created directory at: artifacts]
+[2024-11-28 01:32:51,243: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:32:51,243: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:32:51,243: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:32:51,245: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:32:51,246: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:32:51,246: INFO: common: created directory at: artifacts]
+[2024-11-28 01:32:51,246: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:32:56,357: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:32:56,357: INFO: main: *******************]
+[2024-11-28 01:32:56,358: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 01:32:56,359: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:32:56,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:32:56,360: INFO: common: created directory at: artifacts]
+[2024-11-28 01:32:56,360: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 01:33:02,122: ERROR: main: Directory artifacts/data_transformation is neither a `Dataset` directory nor a `DatasetDict` directory.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 23, in train
+    dataset_samsum_pt = load_from_disk(self.config.data_path)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/load.py", line 2218, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: Directory artifacts/data_transformation is neither a `Dataset` directory nor a `DatasetDict` directory.
+[2024-11-28 01:37:02,562: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:37:02,971: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:37:02,972: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:37:02,973: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:37:02,973: INFO: common: created directory at: artifacts]
+[2024-11-28 01:37:02,973: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:37:02,973: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:37:03,024: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:37:03,024: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:37:03,026: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:37:03,027: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:37:03,027: INFO: common: created directory at: artifacts]
+[2024-11-28 01:37:03,027: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:37:03,027: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:37:03,028: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:37:03,029: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:37:03,030: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:37:03,030: INFO: common: created directory at: artifacts]
+[2024-11-28 01:37:03,030: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:37:09,130: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:37:09,131: INFO: main: *******************]
+[2024-11-28 01:37:09,131: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 01:37:09,132: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:37:09,133: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:37:09,133: INFO: common: created directory at: artifacts]
+[2024-11-28 01:37:09,133: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 01:37:17,006: ERROR: main: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 776, in convert_to_tensors
+    tensor = as_tensor(value)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 738, in as_tensor
+    return torch.tensor(value)
+ValueError: too many dimensions 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3541, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 240, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 792, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+[2024-11-28 01:42:30,060: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:42:30,489: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:42:30,490: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:42:30,492: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:42:30,492: INFO: common: created directory at: artifacts]
+[2024-11-28 01:42:30,492: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:42:30,492: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:42:30,609: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:42:30,609: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:42:30,610: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:42:30,611: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:42:30,611: INFO: common: created directory at: artifacts]
+[2024-11-28 01:42:30,611: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:42:30,612: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:42:30,612: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:42:30,613: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:42:30,614: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:42:30,614: INFO: common: created directory at: artifacts]
+[2024-11-28 01:42:30,614: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:42:36,470: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:42:36,470: INFO: main: *******************]
+[2024-11-28 01:42:36,470: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 01:42:36,472: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:42:36,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:42:36,473: INFO: common: created directory at: artifacts]
+[2024-11-28 01:42:36,473: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 01:42:44,199: ERROR: main: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 776, in convert_to_tensors
+    tensor = as_tensor(value)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 738, in as_tensor
+    return torch.tensor(value)
+ValueError: too many dimensions 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2427, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 5045, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 599, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3541, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 240, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 792, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+[2024-11-28 01:51:35,794: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:51:36,242: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:51:36,244: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:51:36,245: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:51:36,245: INFO: common: created directory at: artifacts]
+[2024-11-28 01:51:36,245: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:51:36,245: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:51:36,295: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:51:36,295: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:51:36,297: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:51:36,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:51:36,297: INFO: common: created directory at: artifacts]
+[2024-11-28 01:51:36,298: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:51:36,298: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:51:36,298: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:51:36,300: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:51:36,300: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:51:36,301: INFO: common: created directory at: artifacts]
+[2024-11-28 01:51:36,301: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:51:38,971: ERROR: main: All dialogues must be strings.]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 33, in <module>
+    data_transformation.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 80, in convert
+    dataset_samsum_pt = dataset_samsum.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 886, in map
+    {
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/dataset_dict.py", line 887, in <dictcomp>
+    k: dataset.map(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/data_transformation.py", line 41, in convert_examples_to_features
+    raise TypeError("All dialogues must be strings.")
+TypeError: All dialogues must be strings.
+[2024-11-28 01:52:08,728: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-28 01:52:09,062: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-28 01:52:09,063: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:52:09,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:52:09,064: INFO: common: created directory at: artifacts]
+[2024-11-28 01:52:09,064: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-28 01:52:09,064: INFO: data_ingestion: File already exists of size: ~ 11648 KB]
+[2024-11-28 01:52:09,113: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:52:09,113: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-11-28 01:52:09,115: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:52:09,116: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:52:09,116: INFO: common: created directory at: artifacts]
+[2024-11-28 01:52:09,116: INFO: common: created directory at: artifacts/data_validation]
+[2024-11-28 01:52:09,116: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:52:09,116: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-28 01:52:09,118: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:52:09,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:52:09,119: INFO: common: created directory at: artifacts]
+[2024-11-28 01:52:09,119: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-28 01:52:14,017: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-28 01:52:14,018: INFO: main: *******************]
+[2024-11-28 01:52:14,018: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-11-28 01:52:14,019: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-28 01:52:14,020: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-28 01:52:14,020: INFO: common: created directory at: artifacts]
+[2024-11-28 01:52:14,020: INFO: common: created directory at: artifacts/model_trainer]
+[2024-11-28 01:56:52,461: ERROR: main: MPS backend out of memory (MPS allocated: 12.28 GB, other allocations: 5.57 GB, max allowed: 18.13 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).]
+Traceback (most recent call last):
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/main.py", line 45, in <module>
+    model_trainer.main()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/src/textSummarizer/conponents/model_trainer.py", line 49, in train
+    trainer.train()
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 3612, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2241, in backward
+    loss.backward(**kwargs)
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/ndjebayidamarisstephanie/Text-Summarizer/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: MPS backend out of memory (MPS allocated: 12.28 GB, other allocations: 5.57 GB, max allowed: 18.13 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
