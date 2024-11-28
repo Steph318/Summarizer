@@ -1,5 +1,7 @@
 # Text Summarizer
 
+![AI Summarization](https://sparkmailapp.com/img/blog/ai-summary-en.png)
+
 ## Project Overview
 This project implements an end-to-end NLP (Natural Language Processing) solution for text summarization. The primary objective is to condense lengthy texts (e.g., articles or documents) into shorter, more concise summaries while preserving the original meaning and key information.
 
@@ -103,8 +105,9 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Acknowledgements
 This project was developed using:
+- A [tutorial by Krish Naik](https://www.youtube.com/watch?v=p7V4Aa7qEpw&t=992s&ab_channel=KrishNaik) on YouTube, which served as the foundation for this project.
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
 - [SAMSum Dataset](https://huggingface.co/datasets/samsum)
 - [FastAPI](https://fastapi.tiangolo.com/)
 
-For questions or feedback, feel free to open an issue or contact the repository owner.
+For questions or feedback, feel free to reach me at dsndjebayi@aimsammi.org
