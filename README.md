@@ -110,4 +110,16 @@ This project was developed using:
 - [SAMSum Dataset](https://huggingface.co/datasets/samsum)
 - [FastAPI](https://fastapi.tiangolo.com/)
 
-For questions or feedback, feel free to reach me at dsndjebayi@aimsammi.org
+For questions or feedback, feel free to reach me at [dsndjebayi@aimsammi.org](mailto:dsndjebayi@aimsammi.org).
+
+
+---
+
+## 📝 To-Do List
+Here are the remaining tasks for the project in the recommended order:
+1. ✅ **Model Evaluation**: Implement and validate model performance metrics.
+2. 🚀 **FastAPI Endpoint Implementation**: Build a FastAPI application for serving predictions.
+3. ⚙️ **CI/CD with GitHub Actions**: Automate the testing and deployment workflow.
+4. 🌐 **AWS Deployment**: Deploy the project on AWS for scalability and accessibility.
+
+---
